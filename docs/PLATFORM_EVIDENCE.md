@@ -9,9 +9,16 @@ Only record what was actually run. Do not pre-fill results.
 - Packages and versions:
 
 ## Model run on LinuxONE
-- Command used:
-- Output:
-- Screenshot file: results/platform_evidence/
+
+- Status: DONE
+- Architecture: s390x (`uname -m`)
+- Python: 3.12.3
+- Commit tested: 4be1798 (Sequence engine and fixtures)
+- Test command: `python -m unittest discover -s tests`
+- Result: Ran 28 tests, OK
+- Fixture metrics: TP=2 FP=0 TN=4 FN=0
+- Library versions: numpy 1.26.4, scikit-learn 1.4.1.post1, SciPy 1.11.4, matplotlib 3.6.3, pytest 7.4.4
+- Screenshots: results/platform_evidence/01_environment.png, results/platform_evidence/02_versions.png
 
 ## Constraints and fallbacks
 -
