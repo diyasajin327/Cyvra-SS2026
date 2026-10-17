@@ -3,10 +3,10 @@
 Only record what was actually run. Do not pre-fill results.
 
 ## Environment (fill in on LinuxONE)
-- Architecture (`uname -m`):
-- Python version:
-- Memory / storage:
-- Packages and versions:
+- Architecture (`uname -m`): s390x
+- Python version: 3.12.3
+- Memory / storage: 7.8 GiB RAM (6.6 GiB available), no swap; 50 GB root disk, 3.0 GB used, 45 GB free
+- Packages and versions: numpy 1.26.4, scikit-learn 1.4.1.post1, SciPy 1.11.4, matplotlib 3.6.3, pytest 7.4.4
 
 ## Model run on LinuxONE
 
@@ -21,4 +21,4 @@ Only record what was actually run. Do not pre-fill results.
 - Screenshots: results/platform_evidence/01_environment.png, results/platform_evidence/02_versions.png
 
 ## Constraints and fallbacks
--
+- No fallbacks were needed. The tests ran directly on LinuxONE (s390x) in the project's `.venv`.
