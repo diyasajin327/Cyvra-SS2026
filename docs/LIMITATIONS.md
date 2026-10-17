@@ -51,20 +51,28 @@ A controlled, user-space simulation that:
 
 ## 6. Evaluation limitations
 
+
 - The dataset is **synthetic and small**. It was written by the team, so it reflects our own assumptions.
-- Metrics are computed from real runs and reported with raw counts (true positives, false positives, false negatives, true negatives).
-- Traces were labelled before running the detector, and development and held-out traces were split before tuning.
-- If the held-out evaluation was not completed, results are marked **preliminary and development-set-only**.
-- Latency was measured locally on a laptop. It is **not** production-grade performance.
+- Metrics are computed from actual runs and reported with raw counts (true positives, false positives, false negatives, true negatives).
+- The original six-trace fixture and the expanded 20-trace fixture are development/behavior-testing data. The expanded fixture was designed around the detector's existing rule behavior; it is not an independent held-out benchmark.
+- No independent held-out evaluation has been established by the runs documented here. Results are **preliminary and synthetic-corpus-only**.
+- The sequence engine's perfect results on the expanded fixture must not be interpreted as evidence of generalization.
+- Latency was measured locally on LinuxONE for these runs. It is **not** a production-grade performance benchmark.
+
 
 ## 7. Novelty
 
 Session-aware command controls and sequence detection already exist in adjacent tools. We present this as a measured prototype, **not** the first system of its kind.
 
+
 ## 8. IBM Z / LinuxONE
 
-- **Status: not yet tested on LinuxONE.** No claim is made of IBM Z or LinuxONE deployment or of any platform-specific advantage.
-- This section will be updated with exactly what was run and where, backed by the screenshots in `results/platform_evidence/`.
+- **Status: tested on LinuxONE.** The project was run on an IBM LinuxONE Community Cloud instance using Ubuntu 24.04 and Python 3.12.
+- The full test suite passed: **58 tests, 0 failures, 0 errors, 0 skipped** in the recorded run.
+- The labelled-corpus evaluation was also executed on LinuxONE using `fixtures/role_sequences.jsonl` and `fixtures/role_sequences_extended.jsonl`.
+- These runs demonstrate execution and functional testing on the platform. They do not establish a platform-specific performance advantage.
+- Evidence screenshots should be stored in `results/platform_evidence/`.
+
 
 ## 9. Known gaps
 
