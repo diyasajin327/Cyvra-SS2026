@@ -1,0 +1,6 @@
+{"session_id":"s-01","roles":["OTHER","OTHER","OTHER"],"label":"BENIGN"}
+{"session_id":"s-02","roles":["SENSITIVE_READ","STAGE_DATA","OUTBOUND_TRANSFER"],"label":"RISKY"}
+{"session_id":"s-03","roles":["SENSITIVE_READ","OTHER","STAGE_DATA","OTHER","OUTBOUND_TRANSFER"],"label":"RISKY"}
+{"session_id":"s-04","roles":["OUTBOUND_TRANSFER","STAGE_DATA","SENSITIVE_READ"],"label":"BENIGN"}
+{"session_id":"s-05","roles":["SENSITIVE_READ","OUTBOUND_TRANSFER"],"label":"BENIGN"}
+{"session_id":"s-06","roles":["STAGE_DATA","OTHER","OUTBOUND_TRANSFER"],"label":"BENIGN"}
